@@ -1,6 +1,6 @@
 {
   "name": "pull-group-by",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pull stream to group incoming data based on whatever you like",
   "main": "dist/index.js",
   "repository": "git@github.com:mishguruorg/pull-group-by",
