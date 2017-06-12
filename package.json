@@ -1,0 +1,46 @@
+{
+  "name": "pull-group-by",
+  "version": "1.0.0",
+  "description": "Pull stream to group incoming data based on whatever you like",
+  "main": "dist/index.js",
+  "repository": "git@github.com:mishguruorg/pull-group-by",
+  "author": "George Czabania <george@mish.guru>",
+  "license": "MIT",
+  "devDependencies": {
+    "@mishguru/package": "^1.4.0",
+    "pull-stream": "^3.6.0"
+  },
+  "scripts": {
+    "build": "pkg-build",
+    "prepublish": "pkg-build",
+    "lint": "pkg-lint",
+    "test": "pkg-test",
+    "coverage": "pkg-coverage"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
